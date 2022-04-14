@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('Quicksand-VariableFont_wght.ttf');
+  font-weight: bold;
+}
+
+.navbar{
+  font-family: 'Quicksand';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  cursor: pointer;
+  background-color: #099D29;
+  color: white
+}
+
+.nav-list {
+  width:55%;
+  display:flex;
+  list-style:none;
+  padding: 15px 30px
+}
+
+.nav-list li {
+  padding:15px 30px
+
+}
+.search_icon{
+  justify-content: left;
+}
