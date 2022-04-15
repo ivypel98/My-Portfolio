@@ -1,31 +1,94 @@
 @font-face {
   font-family: 'Quicksand';
-  src: url('Quicksand-VariableFont_wght.ttf');
-  font-weight: bold;
+  src:url(Quicksand-Light.ttf);
 }
 
+  /* src:url(Quicksand-Regular.ttf);
+  src:url(Quicksand-Medium.ttf);
+  src:url(Quicksand-SemiBold.ttf);
+  src:url(Quicksand-Bold.ttf); */
+
+
 .navbar{
-  font-family: 'Quicksand';
+  font-family:url(Quicksand-Light.ttf);
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0px;
   cursor: pointer;
   background-color: #099D29;
-  color: white
+  color: white;
 }
+
 
 .nav-list {
   width:55%;
   display:flex;
   list-style:none;
-  padding: 15px 30px
+  padding: auto
 }
 
 .nav-list li {
   padding:15px 30px
 
 }
-.search_icon{
-  justify-content: left;
+
+
+/* voici les styles relatifs à la partie accueil */
+.home{
+  width: auto;
+  height: 600px;
+  background-color:#7336D8;
+  display:grid;
+  grid-template-columns:25px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.sidebarre{
+  display:flex;
+  flex-direction:column;
+  margin-left:5px;
+  margin-top: 250px;
+  height: 150px;
+  justify-content: space-between;
+}
+.facebook{
+
+  border: solid 1px white;
+  border-radius:10px;
+  height:20px;
+  width:20px;
+  justify-content: center;
+  padding-bottom: 10px;
+  background:center/ 12px 12px url(facebook_pelagieagassi.png) no-repeat;
+  background-color: white;
+  box-shadow:0 0 3px;
+
+}
+.linkedin{
+  border: solid 1px white;
+  border-radius:10px;
+  height:20px;
+  width:20px;
+  justify-content: center;
+  padding-bottom: 10px;
+  background: center/ 14px 12px url(linkedin_pelagieagassi.png) no-repeat;
+  background-color: white;
+  background-repeat:no-repeat;
+  box-shadow:0 0 3px;
+
+}
+.pinterest{
+  border: solid 1px white;
+  border-radius:10px;
+  height:20px;
+  width:20px;
+  justify-content: center;
+  background: center/ 11px 12px url(pinterest_pelagieagassi.png) no-repeat;
+  padding-bottom: 10px;
+  background-color: white;
+  box-shadow:0 0 3px;
+}
+.mainhome{
+ font-family: 'Quicksand';
+ color: white;
 }
