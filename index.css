@@ -1,36 +1,43 @@
 @font-face {
   font-family: 'Quicksand';
-  src:url(Quicksand-Light.ttf);
+  src:url(Quicksand/Quicksand-Regular.ttf);
 }
+header{
+  margin:auto
 
-  /* src:url(Quicksand-Regular.ttf);
-  src:url(Quicksand-Medium.ttf);
-  src:url(Quicksand-SemiBold.ttf);
-  src:url(Quicksand-Bold.ttf); */
-
-
+}
 .navbar{
-  font-family:url(Quicksand-Light.ttf);
+  font-family:"Quicksand", sans-serif;
   display: flex;
+  font-weight: 900;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
   top: 0px;
   cursor: pointer;
-  background-color: #099D29;
-  color: white;
+  background-color:white;
+  color: black;
+}
+.navleft{
+  position: absolute;
+ top:3%;
+ left: 3%;
+  width: 100px;
+  height: 100px;
+  border:1px solid black;
+  border-radius: 50%;
+  background: center center/contain url(images/logopelagieagassi.jpeg) no-repeat;
 }
 
-
 .nav-list {
-  width:55%;
   display:flex;
   list-style:none;
   padding: auto
 }
 
 .nav-list li {
-  padding:15px 30px
+  padding:15px 30px;
 
+  margin: 0 40px;
 }
 
 
@@ -38,10 +45,9 @@
 .home{
   width: auto;
   height: 600px;
-  background-color:#7336D8;
-  display:grid;
-  grid-template-columns:25px 1fr;
-  grid-template-rows: 1fr 1fr;
+  background-color:black;
+  display:flex;
+  margin:auto
 }
 .sidebarre{
   display:flex;
@@ -53,42 +59,73 @@
 }
 .facebook{
 
-  border: solid 1px white;
+  border: solid 3px white;
   border-radius:10px;
   height:20px;
   width:20px;
   justify-content: center;
   padding-bottom: 10px;
-  background:center/ 12px 12px url(facebook_pelagieagassi.png) no-repeat;
+  background:center/ 12px 12px url(./images/facebook_pelagieagassi.png) no-repeat;
   background-color: white;
   box-shadow:0 0 3px;
 
 }
 .linkedin{
-  border: solid 1px white;
+  border: solid 3px white;
   border-radius:10px;
   height:20px;
   width:20px;
   justify-content: center;
   padding-bottom: 10px;
-  background: center/ 14px 12px url(linkedin_pelagieagassi.png) no-repeat;
+  background: center/ 14px 12px url(./images/linkedin_pelagieagassi.png) no-repeat;
   background-color: white;
-  background-repeat:no-repeat;
   box-shadow:0 0 3px;
 
 }
 .pinterest{
-  border: solid 1px white;
+  border: solid 3px white;
   border-radius:10px;
   height:20px;
   width:20px;
   justify-content: center;
-  background: center/ 11px 12px url(pinterest_pelagieagassi.png) no-repeat;
+  background: center/ 11px 12px url(./images/pinterest_pelagieagassi.png) no-repeat;
   padding-bottom: 10px;
   background-color: white;
   box-shadow:0 0 3px;
 }
 .mainhome{
- font-family: 'Quicksand';
+ font-family:"Quicksand", sans-serif;
  color: white;
+ width:calc(100% - 30px);
+ display: flex;
+ flex-direction:row;
+ justify-content:space-between;
+ align-items: center;
+}
+.hello{
+  height:600px;
+  width:60%;
+  padding:30px;
+  font-size:40px;
+
+}
+.texte1{
+  margin-top: 300px;
+  margin-left: 50px
+}
+.texte2{
+  margin-left:80px
+}
+
+.photo{
+  border: solid 0.5 white;
+  height:500px;
+  width:50%;
+  background:center/ 400px 500px url(./images/femme.webp) no-repeat;
+  /* align-self: flex-end; */
+
+}
+.C1{
+  border: 2px solid black;
+  height:600px
 }
