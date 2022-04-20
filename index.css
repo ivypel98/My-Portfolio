@@ -2,8 +2,13 @@
   font-family: 'Quicksand';
   src:url(Quicksand/Quicksand-Regular.ttf);
 }
-header{
-  margin:auto
+
+/* body{
+ overflow: hidden;
+} */
+
+.header{
+  margin:auto;
 
 }
 .navbar{
@@ -19,11 +24,11 @@ header{
 }
 .navleft{
   position: absolute;
- top:3%;
+ top:4%;
  left: 3%;
   width: 100px;
   height: 100px;
-  border:1px solid black;
+  border:1.5px solid #white;
   border-radius: 50%;
   background: center center/contain url(images/logopelagieagassi.jpeg) no-repeat;
 }
@@ -37,7 +42,7 @@ header{
 .nav-list li {
   padding:15px 30px;
 
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
 
@@ -118,14 +123,129 @@ header{
 }
 
 .photo{
-  border: solid 0.5 white;
-  height:500px;
-  width:50%;
+  border:dashed  0.5px white;
+  margin-right: 20%;
+  min-height:450px;
+  min-width:450px;
+  border-radius: 50%;
   background:center/ 400px 500px url(./images/femme.webp) no-repeat;
+  position: relative;
+  z-index: 3
   /* align-self: flex-end; */
 
+}
+.mainhome .photo .circle{
+  height:350px;
+  width:350px;
+  border:1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:2
+
+}
+
+.mainhome .photo .two{
+  height:300px;
+  width:300px;
+}
+
+.mainhome .photo .three{
+  height:250px;
+  width:250px;
 }
 .C1{
   border: 2px solid black;
   height:600px
+}
+.about{
+  font-family: 'Quicksand', sans-serif;
+  width:auto;
+  height: 1000px;
+  position: relative;
+  display: flex
+
+}
+.texteapropos{
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFF ;
+  font-weight: bold;
+  /* color:#900C3F ; */
+  font-size: 50px;
+  position:absolute;
+  top:-2.3%;
+  left: 32%;
+}
+.texteapropos1{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 46px;
+  position:absolute;
+  top:-0.5%;
+  left: 33%;
+  color:white
+}
+
+.container{
+  max-height:600px;
+  width:100%;
+  background-color:#900C3F ;
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction:row;
+
+}
+.container .photo1 {
+  height:300px;
+  width: 300px;
+  margin-top:90px;
+  border:2px outset white ;
+  border-radius: 50%;
+  margin-left: 50px;
+  background:url(./images/femme2.webp) no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3
+}
+.container .photo1 .circle {
+  height:330px;
+  width:330px;
+  border:1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border:1px outset white;
+}
+.container .photo1 .oneB {
+  height:40px;
+  width:40px;
+  border:1.5px outset white;
+  transform: translateX(300%);
+  transform:translateY(300%);
+
+}
+.container .photo1 .twoB {
+  height:40px;
+  width:40px;
+  border:1.5px outset white;
+  transform: translateX(450%);
+  transform:translateY(-400%);
+
+}
+.CV{
+  height:75px;
+  width:100px;
+  border:2px solid white;
+  border-radius: 25%;
+  text-align: center;
+  margin-top:40%;
+  margin-left:5px;
+
 }
