@@ -3,10 +3,6 @@
   src:url(Quicksand/Quicksand-Regular.ttf);
 }
 
-@font-face {
-  font-family:'libel-suit-rg';
-  src:url(Quicksand/libel-suit-rg.otf);
-}
 
 /* body{
  overflow: hidden;
@@ -59,6 +55,7 @@
   display:flex;
   margin:auto
 }
+
 .sidebarre{
   display:flex;
   flex-direction:column;
@@ -67,8 +64,8 @@
   height: 150px;
   justify-content: space-between;
 }
-.facebook{
 
+.facebook{
   border: solid 3px white;
   border-radius:10px;
   height:18px;
@@ -78,8 +75,10 @@
   background:center/ 12px 12px url(./images/facebook_pelagieagassi.png) no-repeat;
   background-color: white;
   box-shadow:0 0 3px;
+  cursor:pointer;
 
 }
+
 .linkedin{
   border: solid 3px white;
   border-radius:10px;
@@ -90,8 +89,9 @@
   background: center/ 14px 12px url(./images/linkedin_pelagieagassi.png) no-repeat;
   background-color: white;
   box-shadow:0 0 3px;
-
+  cursor:pointer
 }
+
 .pinterest{
   border: solid 3px white;
   border-radius:10px;
@@ -102,7 +102,9 @@
   padding-bottom: 10px;
   background-color: white;
   box-shadow:0 0 3px;
+  cursor:pointer
 }
+
 .mainhome{
  font-family:"Quicksand", sans-serif;
  color: white;
@@ -112,6 +114,7 @@
  justify-content:space-between;
  align-items: center;
 }
+
 .hello{
   height:600px;
   width:60%;
@@ -120,11 +123,14 @@
 
 }
 .texte1{
+  width: 300px;
   margin-top: 300px;
   margin-left: 50px
 }
+
 .texte2{
-  margin-left:80px
+  margin-left:80px;
+  width: 300px;
 }
 
 .photo{
@@ -137,8 +143,8 @@
   position: relative;
   z-index: 3
   /* align-self: flex-end; */
-
 }
+
 .mainhome .photo .circle{
   height:350px;
   width:350px;
@@ -150,7 +156,6 @@
   left:50%;
   transform: translate(-50%, -50%);
   z-index:2
-
 }
 
 .mainhome .photo .two{
@@ -162,19 +167,21 @@
   height:250px;
   width:250px;
 }
+
 .C1{
   border: 2px solid black;
   height:600px
 }
+
 .about{
   font-family: 'Quicksand', sans-serif;
   width:auto;
-  height: 1000px;
+  height:750px;
   position: relative;
   display: flex
-
 }
-.texteapropos{
+
+.titleabout{
   color: transparent;
   -webkit-text-stroke: 1px #FFFF ;
   font-weight: bold;
@@ -184,7 +191,8 @@
   top:-2.3%;
   left: 32%;
 }
-.texteapropos1{
+
+.titleabout1{
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 46px;
@@ -195,26 +203,28 @@
 }
 
 .container{
-  max-height:600px;
+  max-height:750px;
   width:100%;
   background-color:#900C3F ;
   /* margin-top: 50px; */
   display: flex;
   flex-direction:row;
-
 }
+
 .container .photo1 {
   height:300px;
   width: 300px;
-  margin-top:90px;
+  /* top:50%; */
+  margin-top:220px;
   border:2px outset white ;
   border-radius: 50%;
-  margin-left: 50px;
+  margin-left: 8%;
   background:url(./images/femme2.webp) no-repeat;
   background-size: cover;
   position: relative;
   z-index: 3
 }
+
 .container .photo1 .circle {
   height:330px;
   width:330px;
@@ -228,6 +238,7 @@
   z-index: 2;
   border:1px outset white;
 }
+
 .container .photo1 .oneB {
   height:40px;
   width:40px;
@@ -244,17 +255,85 @@
   transform:translateY(-450%);
 
 }
+
 .CV{
   text-transform:uppercase;
   height:50px;
   width:250px;
   border:2px solid #900C3F;
   /* border-radius: 25%; */
-  margin-top:420px;
-  margin-left:9%;
+  margin-top:600px;
+  margin-left:11%;
   position: absolute;
   font-size: 15px;
   color:#900C3F;
-  box-shadow: 0 5px 0 5px ;
   font-weight: bold;
+  cursor:pointer;
+}
+
+.textabout2 {
+  color:white;
+  min-height:30vh;
+  min-width:50vw;
+  margin-left:10vh;
+  margin-top:30vh;
+  text-align:left;
+}
+.button_contact{
+  font-size: 8px;
+  height:50px;
+  width:50px;
+  color:#900C3F;
+  border-radius:50%;
+  cursor: pointer;
+  position: absolute;
+  top:80%;
+  left:90%;
+}
+.Portfolio{
+  background-color:black;
+  height:600px;
+  width:auto;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+}
+.text{
+  font-family: "quicksand", sans-serif;
+  color:#900C3F;
+  /* -webkit-text-stroke: 1px #FFFF; */
+  font-size:15px;
+  position: absolute;
+  height:25px;
+}
+.projet{
+  height: 320px;
+  width:auto;
+  margin-top:50px;
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+
+}
+.projet1{
+  height:320px;
+  Width: 320px;
+  border:2px;
+  background:url(images/projet1.jpeg) no-repeat;
+  margin-right: 10px;
+}
+.projet2{
+  height:320px;
+  Width: 320px;
+  border:2px;
+  background:url(images/projet1.jpeg) no-repeat;
+  margin-right: 10px;
+}
+.projet3{
+  height:320px;
+  Width: 320px;
+  border:1px solid;
+  border-color: black;
+  background:url(images/projet1.jpeg) no-repeat;
+  margin-right: 10px;
 }
