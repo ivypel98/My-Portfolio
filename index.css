@@ -1,54 +1,74 @@
-@font-face {
+* {
   font-family: 'Quicksand';
-  src:url(Quicksand/Quicksand-Regular.ttf);
 }
 
 
-/* body{
+/* *{
  overflow: hidden;
 } */
 
 .header{
+
   margin:auto;
 
 }
 .navbar{
-  font-family:"Quicksand", sans-serif;
   display: flex;
-  font-weight: 900;
+  font-weight: 450;
   align-items: center;
-  justify-content:space-around;
   top: 0px;
-  cursor: pointer;
+  margin-left:15%;
+  margin-right: 15%;
+  cursor:cell;
   background-color:white;
   color: black;
+  align-content: center;
 }
+.nav-list li:hover{
+  color:#900C3F ;
+}
+
 .navleft{
-  position: absolute;
- top:4%;
- left: 3%;
-  width: 100px;
-  height: 100px;
-  border:1.5px solid #white;
+  position:absolute;
+  width: 6rem;
+  height: 6rem;
+  margin-top: 2rem;
+  left:6%;
+  border:1.5px solid white;
   border-radius: 50%;
   background: center center/contain url(images/logopelagieagassi.jpeg) no-repeat;
+}
+.fa-magnifying-glass{
+  color:black;
+  font-size: 1.5rem;
+  top: 0px;
+  margin-left:15%;
+  margin-right: 15%;
+  cursor:cell;
 }
 
 .nav-list {
   display:flex;
   list-style:none;
-  padding: auto
+  width:auto;
+  margin-left:2rem;
+  margin-right:2rem;
+}
+
+i{
+  color: white;
 }
 
 .nav-list li {
-  padding:15px 30px;
-
-  margin: 0 20px;
+  min-width:120px;
+  margin: 0 32px 0 32px;
 }
 
 
 /* voici les styles relatifs à la partie accueil */
 .home{
+  margin-right: 8%;
+  margin-left: 8%;
   width: auto;
   height: 600px;
   background-color:black;
@@ -106,7 +126,6 @@
 }
 
 .mainhome{
- font-family:"Quicksand", sans-serif;
  color: white;
  width:calc(100% - 30px);
  display: flex;
@@ -130,7 +149,8 @@
 
 .texte2{
   margin-left:80px;
-  width: 300px;
+  width: 500px;
+  font-family: font-family: 'Orelega One', cursive;;
 }
 
 .photo{
@@ -174,7 +194,6 @@
 }
 
 .about{
-  font-family: 'Quicksand', sans-serif;
   width:auto;
   height:750px;
   position: relative;
@@ -193,7 +212,6 @@
 }
 
 .titleabout1{
-  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 46px;
   position:absolute;
@@ -291,19 +309,16 @@
   left:90%;
 }
 .Portfolio{
-  background-color:black;
-  height:600px;
-  width:auto;
-  display: flex;
-  flex-direction:column;
-  position: relative;
+  margin-right: 15%;
+  margin-left: 15%;
+  align-items: center;
+  height:500px;
 }
 .text{
-  font-family: "quicksand", sans-serif;
+  text-align: center;
   color:#900C3F;
   /* -webkit-text-stroke: 1px #FFFF; */
   font-size:15px;
-  position: absolute;
   height:25px;
 }
 .projet{
@@ -316,24 +331,52 @@
 
 }
 .projet1{
-  height:320px;
+  display: flex;
+  flex-direction: column;
   Width: 320px;
   border:2px;
-  background:url(images/projet1.jpeg) no-repeat;
-  margin-right: 10px;
+}
+img{
+  text-align: center;
+  height:200px;
 }
 .projet2{
-  height:320px;
+  display: flex;
+  flex-direction: column;
   Width: 320px;
   border:2px;
-  background:url(images/projet1.jpeg) no-repeat;
-  margin-right: 10px;
 }
 .projet3{
-  height:320px;
+  display: flex;
+  flex-direction: column;
   Width: 320px;
-  border:1px solid;
-  border-color: black;
-  background:url(images/projet1.jpeg) no-repeat;
-  margin-right: 10px;
+  border:2px;
+}
+footer{
+  height:300px;
+  display:flex;
+  margin-right: 15%;
+  margin-left: 15%;
+  align-items: center;
+}
+.contact{
+  height: 280px;
+}
+.formulaire{
+  height:280px;
+
+}
+.contact p{
+  margin-right: 500px;
+}
+.formulaire{
+  width: 80%;
+}
+input{
+  padding-right:90px;
+  margin-top: 10px;
+}
+.commentaire {
+  min-width:300px;
+  min-height: 150px;
 }
