@@ -8,60 +8,51 @@
 } */
 
 .header{
-
   margin:auto;
-
+  min-width:12vw;
 }
 .navbar{
   display: flex;
-  font-weight: 450;
+  flex-direction: row;
+  font-weight:450;
   align-items: center;
-  top: 0px;
-  margin-left:15%;
-  margin-right: 15%;
-  cursor:cell;
+  justify-content:space-between;
+  top:0px;
+  min-width:25vw;
   background-color:white;
-  color: black;
-  align-content: center;
+  color:black;
+}
+
+.nav-list{
+  min-width:500px;
+  margin-left:20%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  list-style:none;
+  cursor:cell;
 }
 .nav-list li:hover{
   color:#900C3F ;
+}
+
+.fa-magnifying-glass{
+  color:#900C3F;
+  max-height:18px;
+  max-width: 18px;
+  margin-right:250px;
+
 }
 
 .navleft{
   position:absolute;
   width: 6rem;
   height: 6rem;
-  margin-top: 2rem;
+  margin-top:1rem;
   left:6%;
   border:1.5px solid white;
   border-radius: 50%;
   background: center center/contain url(images/logopelagieagassi.jpeg) no-repeat;
-}
-.fa-magnifying-glass{
-  color:black;
-  font-size: 1.5rem;
-  top: 0px;
-  margin-left:15%;
-  margin-right: 15%;
-  cursor:cell;
-}
-
-.nav-list {
-  display:flex;
-  list-style:none;
-  width:auto;
-  margin-left:2rem;
-  margin-right:2rem;
-}
-
-i{
-  color: white;
-}
-
-.nav-list li {
-  min-width:120px;
-  margin: 0 32px 0 32px;
 }
 
 
@@ -69,8 +60,9 @@ i{
 .home{
   margin-right: 8%;
   margin-left: 8%;
-  width: auto;
-  height: 600px;
+  margin:auto;
+  min-width:12vw;
+  height: 90vh;
   background-color:black;
   display:flex;
   margin:auto
@@ -82,7 +74,7 @@ i{
   margin-left:5px;
   margin-top: 250px;
   height: 150px;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .facebook{
@@ -136,38 +128,42 @@ i{
 
 .hello{
   height:600px;
-  width:60%;
+  min-width:50%;
   padding:30px;
   font-size:40px;
 
 }
 .texte1{
   width: 300px;
-  margin-top: 300px;
-  margin-left: 50px
+  margin-top:25%;
+  margin-left:1%;
 }
 
 .texte2{
   margin-left:80px;
-  width: 500px;
-  font-family: font-family: 'Orelega One', cursive;;
+  min-width:700px;
+}
+
+.img__group{
+  width: 50%;
+  margin-left:2%;
+  margin-right:10%;
 }
 
 .photo{
   border:dashed  0.5px white;
-  margin-right: 20%;
-  min-height:450px;
-  min-width:450px;
+  min-height:425px;
+  min-width:425px;
   border-radius: 50%;
   background:center/ 400px 500px url(./images/femme.webp) no-repeat;
   position: relative;
-  z-index: 3
+  z-index: 3;
   /* align-self: flex-end; */
 }
 
 .mainhome .photo .circle{
-  height:350px;
-  width:350px;
+  height:325px;
+  width:325px;
   border:1px solid white;
   border-radius: 50%;
   display: inline-block;
@@ -188,55 +184,43 @@ i{
   width:250px;
 }
 
-.C1{
-  border: 2px solid black;
-  height:600px
-}
+/* ici commence la division à propos de portfolio */
 
 .about{
-  width:auto;
-  height:750px;
-  position: relative;
-  display: flex
+  min-width:12vw;
+  max-height:95vh;
+  position:relative;
+  display: flex;
 }
 
 .titleabout{
   color: transparent;
-  -webkit-text-stroke: 1px #FFFF ;
+  -webkit-text-stroke: 0.5px #FFFf;
   font-weight: bold;
   /* color:#900C3F ; */
-  font-size: 50px;
+  font-size:5em;
   position:absolute;
-  top:-2.3%;
-  left: 32%;
-}
-
-.titleabout1{
-  font-weight: bold;
-  font-size: 46px;
-  position:absolute;
-  top:-0.5%;
-  left: 33%;
-  color:white
+  transform: translate(-50%,-50%);
+  margin-left:40%;
+  text-shadow:0.5px 4px #ffff;
+  text-transform:capitalize;
 }
 
 .container{
-  max-height:750px;
-  width:100%;
+  min-height:90vh;
+  min-width:12vw;
   background-color:#900C3F ;
-  /* margin-top: 50px; */
   display: flex;
   flex-direction:row;
 }
 
 .container .photo1 {
   height:300px;
-  width: 300px;
-  /* top:50%; */
-  margin-top:220px;
+  width:300px;
+
   border:2px outset white ;
   border-radius: 50%;
-  margin-left: 8%;
+  margin-left: 15%;
   background:url(./images/femme2.webp) no-repeat;
   background-size: cover;
   position: relative;
@@ -280,7 +264,7 @@ i{
   width:250px;
   border:2px solid #900C3F;
   /* border-radius: 25%; */
-  margin-top:600px;
+  margin-top:330px;
   margin-left:11%;
   position: absolute;
   font-size: 15px;
@@ -322,12 +306,13 @@ i{
   height:25px;
 }
 .projet{
-  height: 320px;
-  width:auto;
+  max-height: 320px;
+  max-width:1500px;
   margin-top:50px;
   display: flex;
   justify-content: space-between;
   padding:20px;
+
 
 }
 .projet1{
@@ -352,11 +337,14 @@ img{
   Width: 320px;
   border:2px;
 }
+
+/* enfin commence la dernière partie de mon portfolio: le pied de page */
+
 footer{
-  height:300px;
+  height:600px;
   display:flex;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
   align-items: center;
 }
 .contact{
@@ -366,11 +354,12 @@ footer{
   height:280px;
 
 }
-.contact p{
-  margin-right: 500px;
+/* .contact p{
+  margin-right: 500px; */
 }
 .formulaire{
   width: 80%;
+  margin-left: 200px;
 }
 input{
   padding-right:90px;
