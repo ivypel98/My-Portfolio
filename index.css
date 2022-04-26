@@ -3,10 +3,6 @@
 }
 
 
-/* *{
- overflow: hidden;
-} */
-
 .header{
   margin:auto;
   min-width:12vw;
@@ -18,7 +14,6 @@
   align-items: center;
   justify-content:space-between;
   top:0px;
-  min-width:25vw;
   background-color:white;
   color:black;
 }
@@ -148,6 +143,7 @@
   width: 50%;
   margin-left:2%;
   margin-right:10%;
+
 }
 
 .photo{
@@ -188,8 +184,7 @@
 
 .about{
   min-width:12vw;
-  max-height:95vh;
-  position:relative;
+  height:95vh;
   display: flex;
 }
 
@@ -210,21 +205,16 @@
   min-height:90vh;
   min-width:12vw;
   background-color:#900C3F ;
-  display: flex;
-  flex-direction:row;
+  display:flex;
+  justify-content:space-around;
 }
 
 .container .photo1 {
-  height:300px;
-  width:300px;
-
-  border:2px outset white ;
-  border-radius: 50%;
-  margin-left: 15%;
-  background:url(./images/femme2.webp) no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 3
+  max-height:85vh;
+  min-width:40%;
+  margin-top:5%;
+  position:relative;
+  z-index:3;
 }
 
 .container .photo1 .circle {
@@ -252,35 +242,60 @@
 .container .photo1 .twoB {
   height:40px;
   width:40px;
-  border:1.5px outset white;
+  border:1px outset white;
   transform: translateX(450%);
   transform:translateY(-450%);
+  z-index:1;
 
+}
+
+.container .photo1 .threeB {
+  background:url(./images/femme2.webp) no-repeat;
+  background-size:cover;
+  border:2px outset white ;
+  border-radius: 50%;
+  margin-left: 8%;
+  z-index: 0;
 }
 
 .CV{
   text-transform:uppercase;
   height:50px;
-  width:250px;
-  border:2px solid #900C3F;
-  /* border-radius: 25%; */
-  margin-top:330px;
-  margin-left:11%;
-  position: absolute;
-  font-size: 15px;
+  width:200px;
+  border:1px solid #900C3F;
+  margin-left:35%;
+  margin-top:110%;
+  font-size: 1.1em;
   color:#900C3F;
-  font-weight: bold;
+  font-weight:bold;
   cursor:pointer;
+}
+.CV:hover {
+  background-color:#900C3F;
+  color:#FFFF;
 }
 
 .textabout2 {
   color:white;
-  min-height:30vh;
-  min-width:50vw;
-  margin-left:10vh;
-  margin-top:30vh;
+  max-height:85vh;
+  min-width:50%;
+  margin-left:6vh;
+  margin-top:25vh;
+}
+.title{
+  font-size:2.8em;
+}
+.text{
+  text-align:justify;
+  color:#ffff;
+  font-size:1em;
+  margin-top:3%;
+  padding-right:8%;
+  min-height:12vh;
+  min-width:2vw;
   text-align:left;
 }
+
 .button_contact{
   font-size: 8px;
   height:50px;
@@ -292,50 +307,65 @@
   top:80%;
   left:90%;
 }
+
+/* la division de mes réalisations de mon pf */
+/* la division de mes réalisations de mon pf */
+/* {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #FFFf;
+  font-weight: bold;
+  font-size:5em;
+  position:absolute;
+  transform: translate(-50%,-50%);
+  margin-left:40%;
+  text-shadow:0.5px 4px #ffff;
+  text-transform:capitalize;
+} */
+
+
 .Portfolio{
-  margin-right: 15%;
-  margin-left: 15%;
-  align-items: center;
-  height:500px;
+  margin-right: 10%;
+  margin-left: 10%;
+  max-height:400vh;
+  min-width:25vw;
 }
-.text{
-  text-align: center;
+
+.text1{
   color:#900C3F;
-  /* -webkit-text-stroke: 1px #FFFF; */
-  font-size:15px;
-  height:25px;
+  -webkit-font-smoothing:antialiased;
 }
+
 .projet{
-  max-height: 320px;
-  max-width:1500px;
-  margin-top:50px;
-  display: flex;
-  justify-content: space-between;
-  padding:20px;
-
-
+  max-height:250vh;
+  width:20vw;
+  margin-top:1%;
+  display:flex;
+  justify-content:space-between;
 }
 .projet1{
   display: flex;
   flex-direction: column;
-  Width: 320px;
-  border:2px;
+  Width: 350px;
+  margin:15px 15px 15px 15px;
 }
 img{
   text-align: center;
   height:200px;
+  box-shadow: 10px -12px #900C3F;
 }
 .projet2{
   display: flex;
   flex-direction: column;
-  Width: 320px;
+  Width: 350px;
   border:2px;
+  margin:15px 15px 15px 15px
 }
 .projet3{
   display: flex;
   flex-direction: column;
-  Width: 320px;
+  Width: 350px;
   border:2px;
+  margin:15px 15px 15px 15px;
 }
 
 /* enfin commence la dernière partie de mon portfolio: le pied de page */
