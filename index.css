@@ -10,16 +10,21 @@ body{
 header{
   margin:auto;
   min-width:12vw;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .navbar{
   display: flex;
   flex-direction: row;
-  font-weight:450;
+  font-weight:450px;
   align-items: center;
   justify-content:space-evenly;
   background-color:white;
   color:black;
+
 }
 
 .nav-list{
@@ -62,19 +67,60 @@ header{
   padding: 200px 0;
   background-color:black;
   display:flex;
+  width: 100%;
+	height: 22vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color:white;
 }
+
+span{
+	margin: 0 10px;
+	line-height: .5;
+	animation: span 3s ease-in infinite alternate;
+  font-size:4rem;
+}
+.mainanim{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	@media(max-width: 500px){ transform: scale(.65); }
+}
+.letter{
+	display: inline-flex;
+	height: 42px;
+	width: 42px;
+	/* border: 2.5px solid #FF1EAD; */
+	border: 1.5px solid white;
+	border-radius: 50px;
+	box-shadow: 0 0 4px black,
+		inset 0 0 0.5rem white;
+	animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span {
+	0%,30%{ margin: 0 15px; }
+	70%,100%{ margin: 0 5px; }
+}
+@keyframes letter {
+	0%,30%{ width: 27px; }
+	70%,100%{ width: 25vw; }
+}
+/* fin test */
 
 .sidebarre{
   display:flex;
   flex-direction:column;
-  margin: 150px 50px 0 5px;
+  margin: 125px 50px 0 7px;
   height: 150px;
   justify-content:space-evenly;
 }
 
 i{
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: white;
+
 }
 
 i:hover{
@@ -83,25 +129,20 @@ i:hover{
 }
 
 .texte2{
-  padding-left: 100px;
+  padding-left:5%;
   color: white;
-  width: 40%;
-}
-
-.texte2 h1{
-  padding: 0;
-  margin: 50px 0 0;
-  font-size: 7.5em;
+  width: 45%;
 }
 
 .texte2 p{
 font-size: 3em;
+font-weight:medium;
 }
 
 .img__group{
-  width: 60%;
+  width: 55%;
   display: flex;
-  justify-content: center;
+  justify-content:right;
   color: white;
   align-items: center;
 }
@@ -126,7 +167,6 @@ font-size: 3em;
 .button{
   width:10%;
 }
-
 .button-contact{
   font-size: 10px;
   height:50px;
@@ -140,7 +180,7 @@ font-size: 3em;
 .about{
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   justify-content: space-between;
   background-color: #900C3F ;
 }
@@ -161,37 +201,24 @@ font-size: 3em;
   margin-left: 8%;
   margin-right: 8%;
   display: flex;
+  justify-content: space-evenly;
   background-color:#900C3F;
-}
-.img-group{
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  margin-top: 100px;
+  padding-top: 10%;
 }
 
 .photo1{
-  border: solid  1px white;
-  height: 425px;
-  width: 425px;
-  border-radius: 50%;
-  background: center/ 400px 500px url(./images/femme.webp) no-repeat;
-}
-
-.photo1 .circle{
-  padding: 10px 0 0;
-  height:425px;
-  width:425px;
-  border: 1px solid white;
-  border-radius: 50%;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+  width: 50%;
+  border: 1px dotted white;
+  height: 425px;
+  border-radius: 50%;
+  background: center/ 425px 430px url(./images/femme.webp) no-repeat;
 }
 
 .text-about-2 {
-  margin-top: 100px;
   width: 50%;
   color:white;
 }
@@ -200,30 +227,32 @@ font-size: 3em;
   font-size: 3em;
 }
 
-.CV button{
-  margin-top: 60px;
+.CV p{
+  width:14rem;
+  text-align: center;
   text-transform:uppercase;
-  border:1px solid #900C3F;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  margin-top:90%;
+  margin-left: 20%;
   color:#900C3F;
   font-weight:bold;
   cursor:pointer;
-}
-.CV p{
-  padding: 5px 30px;
+  background-color:#FFFf;
 }
 
-.CV button:hover {
-  background-color:#900C3F;
-  border: 1px solid white;
+.CV :hover {
   transition: .4s;
-  color:#FFFF;
+  color:#900C3F;
 }
+.text-about-2{
+  margin-left:15%;
+}
+
 .text p{
   text-align: justify;
   color: #ffff;
   font-size: 1em;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 /* Partie Projets */
@@ -235,7 +264,7 @@ font-size: 3em;
 .text-1 h1{
   color:#900C3F;
   text-align: center;
-  font-size: 5em;
+  font-size: 5.5em;
 }
 
 .projet{
