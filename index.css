@@ -2,18 +2,22 @@
   font-family: 'Quicksand';
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
 
-.header{
+header{
   margin:auto;
   min-width:12vw;
 }
+
 .navbar{
   display: flex;
   flex-direction: row;
   font-weight:450;
   align-items: center;
-  justify-content:space-between;
-  top:0px;
+  justify-content:space-evenly;
   background-color:white;
   color:black;
 }
@@ -22,11 +26,13 @@
   min-width:500px;
   margin-left:20%;
   display:flex;
+  font-weight: 600;
   flex-direction:row;
   justify-content:space-between;
-  list-style:none;
+  list-style-type: none;
   cursor:cell;
 }
+
 .nav-list li:hover{
   color:#900C3F ;
 }
@@ -53,343 +59,223 @@
 
 /* voici les styles relatifs à la partie accueil */
 .home{
-  margin-right: 8%;
-  margin-left: 8%;
-  margin:auto;
-  min-width:12vw;
-  height: 90vh;
+  padding: 200px 0;
   background-color:black;
   display:flex;
-  margin:auto
 }
 
 .sidebarre{
   display:flex;
   flex-direction:column;
-  margin-left:5px;
-  margin-top: 250px;
+  margin: 150px 50px 0 5px;
   height: 150px;
-  justify-content:space-between;
+  justify-content:space-evenly;
 }
 
-.facebook{
-  border: solid 3px white;
-  border-radius:10px;
-  height:18px;
-  width:18px;
-  justify-content: center;
-  padding-bottom: 10px;
-  background:center/ 12px 12px url(./images/facebook_pelagieagassi.png) no-repeat;
-  background-color: white;
-  box-shadow:0 0 3px;
-  cursor:pointer;
-
+i{
+  font-size: 1.8em;
+  color: white;
 }
 
-.linkedin{
-  border: solid 3px white;
-  border-radius:10px;
-  height:18px;
-  width:18px;
-  justify-content: center;
-  padding-bottom: 10px;
-  background: center/ 14px 12px url(./images/linkedin_pelagieagassi.png) no-repeat;
-  background-color: white;
-  box-shadow:0 0 3px;
-  cursor:pointer
-}
-
-.pinterest{
-  border: solid 3px white;
-  border-radius:10px;
-  height:18px;
-  width:18px;
-  justify-content: center;
-  background: center/ 11px 12px url(./images/pinterest_pelagieagassi.png) no-repeat;
-  padding-bottom: 10px;
-  background-color: white;
-  box-shadow:0 0 3px;
-  cursor:pointer
-}
-
-.mainhome{
- color: white;
- width:calc(100% - 30px);
- display: flex;
- flex-direction:row;
- justify-content:space-between;
- align-items: center;
-}
-
-.hello{
-  height:600px;
-  min-width:50%;
-  padding:30px;
-  font-size:40px;
-
-}
-.texte1{
-  width: 300px;
-  margin-top:25%;
-  margin-left:1%;
+i:hover{
+  transition: .4s;
+  color: #900C3F;
 }
 
 .texte2{
-  margin-left:80px;
-  min-width:700px;
+  padding-left: 100px;
+  color: white;
+  width: 40%;
+}
+
+.texte2 h1{
+  padding: 0;
+  margin: 50px 0 0;
+  font-size: 7.5em;
+}
+
+.texte2 p{
+font-size: 3em;
 }
 
 .img__group{
-  width: 50%;
-  margin-left:2%;
-  margin-right:10%;
-
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
 }
 
 .photo{
-  border:dashed  0.5px white;
-  min-height:425px;
-  min-width:425px;
+  border: solid  1px white;
+  height: 425px;
+  width: 425px;
   border-radius: 50%;
-  background:center/ 400px 500px url(./images/femme.webp) no-repeat;
-  position: relative;
-  z-index: 3;
-  /* align-self: flex-end; */
+  background: center/ 400px 500px url(./images/femme.webp) no-repeat;
 }
 
-.mainhome .photo .circle{
-  height:325px;
-  width:325px;
-  border:1px solid white;
+.photo .circle{
+  padding: 10px 0 0;
+  height:425px;
+  width:425px;
+  border: 1px solid white;
   border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  z-index:2
+  display: flex;
 }
 
-.mainhome .photo .two{
-  height:300px;
-  width:300px;
+.button{
+  width:10%;
 }
 
-.mainhome .photo .three{
-  height:250px;
-  width:250px;
+.button-contact{
+  font-size: 10px;
+  height:50px;
+  color:#900C3F;
+  border-radius:50%;
+  cursor: pointer;
 }
 
 /* ici commence la division à propos de portfolio */
 
 .about{
-  min-width:12vw;
-  height:95vh;
   display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  background-color: #900C3F ;
 }
 
-.titleabout{
+.title-about{
   color: transparent;
   -webkit-text-stroke: 0.5px #FFFf;
   font-weight: bold;
-  /* color:#900C3F ; */
-  font-size:5em;
-  position:absolute;
+  font-size: 5em;
+  position: absolute;
   transform: translate(-50%,-50%);
-  margin-left:40%;
-  text-shadow:0.5px 4px #ffff;
-  text-transform:capitalize;
+  margin-left: 40%;
+  text-shadow: 0.5px 4px #ffff;
+  text-transform: capitalize;
 }
 
 .container{
-  min-height:90vh;
-  min-width:12vw;
-  background-color:#900C3F ;
-  display:flex;
-  justify-content:space-around;
-}
-
-.container .photo1 {
-  max-height:85vh;
-  min-width:40%;
-  margin-top:5%;
-  position:relative;
-  z-index:3;
-}
-
-.container .photo1 .circle {
-  height:330px;
-  width:330px;
-  border:1px solid white;
-  border-radius: 50%;
-  display: inline-block;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  border:1px outset white;
-}
-
-.container .photo1 .oneB {
-  height:40px;
-  width:40px;
-  border:1.5px outset white;
-  transform: translateX(300%);
-  transform:translateY(300%);
-
-}
-.container .photo1 .twoB {
-  height:40px;
-  width:40px;
-  border:1px outset white;
-  transform: translateX(450%);
-  transform:translateY(-450%);
-  z-index:1;
-
-}
-
-.container .photo1 .threeB {
-  background:url(./images/femme2.webp) no-repeat;
-  background-size:cover;
-  border:2px outset white ;
-  border-radius: 50%;
   margin-left: 8%;
-  z-index: 0;
+  margin-right: 8%;
+  display: flex;
+  background-color:#900C3F;
+}
+.img-group{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
 }
 
-.CV{
+.photo1{
+  border: solid  1px white;
+  height: 425px;
+  width: 425px;
+  border-radius: 50%;
+  background: center/ 400px 500px url(./images/femme.webp) no-repeat;
+}
+
+.photo1 .circle{
+  padding: 10px 0 0;
+  height:425px;
+  width:425px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+}
+
+.text-about-2 {
+  margin-top: 100px;
+  width: 50%;
+  color:white;
+}
+
+.title{
+  font-size: 3em;
+}
+
+.CV button{
+  margin-top: 60px;
   text-transform:uppercase;
-  height:50px;
-  width:200px;
   border:1px solid #900C3F;
-  margin-left:35%;
-  margin-top:110%;
   font-size: 1.1em;
   color:#900C3F;
   font-weight:bold;
   cursor:pointer;
 }
-.CV:hover {
+.CV p{
+  padding: 5px 30px;
+}
+
+.CV button:hover {
   background-color:#900C3F;
+  border: 1px solid white;
+  transition: .4s;
   color:#FFFF;
 }
-
-.textabout2 {
-  color:white;
-  max-height:85vh;
-  min-width:50%;
-  margin-left:6vh;
-  margin-top:25vh;
-}
-.title{
-  font-size:2.8em;
-}
-.text{
-  text-align:justify;
-  color:#ffff;
-  font-size:1em;
-  margin-top:3%;
-  padding-right:8%;
-  min-height:12vh;
-  min-width:2vw;
-  text-align:left;
+.text p{
+  text-align: justify;
+  color: #ffff;
+  font-size: 1em;
+  margin-top: 3%;
 }
 
-.button_contact{
-  font-size: 8px;
-  height:50px;
-  width:50px;
+/* Partie Projets */
+.portfolio{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.text-1 h1{
   color:#900C3F;
-  border-radius:50%;
-  cursor: pointer;
-  position: absolute;
-  top:80%;
-  left:90%;
-}
-
-/* la division de mes réalisations de mon pf */
-/* la division de mes réalisations de mon pf */
-/* {
-  color: transparent;
-  -webkit-text-stroke: 0.5px #FFFf;
-  font-weight: bold;
-  font-size:5em;
-  position:absolute;
-  transform: translate(-50%,-50%);
-  margin-left:40%;
-  text-shadow:0.5px 4px #ffff;
-  text-transform:capitalize;
-} */
-
-
-.Portfolio{
-  margin-right: 10%;
-  margin-left: 10%;
-  max-height:400vh;
-  min-width:25vw;
-}
-
-.text1{
-  color:#900C3F;
-  -webkit-font-smoothing:antialiased;
+  text-align: center;
+  font-size: 5em;
 }
 
 .projet{
-  max-height:250vh;
-  width:20vw;
-  margin-top:1%;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.projet1{
+.projet div{
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  Width: 350px;
-  margin:15px 15px 15px 15px;
+  padding: 4px;
+  border: 2px Solid black;
+  flex-basis: 30%;
 }
-img{
-  text-align: center;
-  height:200px;
-  box-shadow: 10px -12px #900C3F;
+.projet div p{
+  padding: 10px 10px;
+  text-align: justify;
 }
-.projet2{
-  display: flex;
-  flex-direction: column;
-  Width: 350px;
-  border:2px;
-  margin:15px 15px 15px 15px
-}
-.projet3{
-  display: flex;
-  flex-direction: column;
-  Width: 350px;
-  border:2px;
-  margin:15px 15px 15px 15px;
+.projet img{
+  padding: 20px 0;
+  height: 300px;
+  width: 400px;
+  margin: 0 auto;
 }
 
-/* enfin commence la dernière partie de mon portfolio: le pied de page */
 
 footer{
-  height:600px;
   display:flex;
-  margin-right: 10%;
-  margin-left: 10%;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 8%;
+  justify-content: space-between;
 }
-.contact{
-  height: 280px;
-}
-.formulaire{
-  height:280px;
 
+.contact{
+  width: 40%;
 }
-/* .contact p{
-  margin-right: 500px; */
-}
+
 .formulaire{
-  width: 80%;
-  margin-left: 200px;
+  width: 40%;
 }
 input{
   padding-right:90px;
