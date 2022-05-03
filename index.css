@@ -75,7 +75,7 @@ header{
   font-family: 'Quicksand', sans-serif;
   color:white;
 }
-
+   /* reference code pour animation:https://codepen.io */
 span{
 	margin: 0 10px;
 	line-height: .5;
@@ -214,6 +214,7 @@ font-weight:medium;
   width: 50%;
   border: 1px dotted white;
   height: 425px;
+  width:440px;
   border-radius: 50%;
   background: center/ 425px 430px url(./images/femme.webp) no-repeat;
 }
@@ -277,7 +278,7 @@ font-weight:medium;
   display: flex;
   flex-direction: column;
   padding: 4px;
-  border: 2px Solid black;
+  border: 2px Solid #900C3F;
   flex-basis: 30%;
 }
 .projet div p{
@@ -295,7 +296,8 @@ font-weight:medium;
 footer{
   display:flex;
   flex-wrap: wrap;
-  margin: 8%;
+  margin-top: 15px;
+  padding-top:20px;
   justify-content: space-between;
 }
 
@@ -304,13 +306,42 @@ footer{
 }
 
 .formulaire{
-  width: 40%;
+  width: 50%;
+  padding-top: 100px;
 }
 input{
   padding-right:90px;
-  margin-top: 10px;
+  margin-top: 5%;
 }
 .commentaire {
   min-width:300px;
   min-height: 150px;
+}
+.copyright{
+  background-color:#900C3F;
+  margin-top:5vh;
+  color: #ffff;
+  width:100%;
+
+}
+.submit{ background-color:#900C3F;
+         color: white;
+         border-radius: 10px;
+         border: 1px solid white;
+         padding:5px;
+}
+.contact h1{ color:#900C3F;
+             font-size:3em;
+             margin-left: 20px;
+}
+.contact p{
+  margin-left: 20px;
+}
+.contactim{
+  height:250px;
+  margin-left: 20px;
+  background:left /350px 350px url(./images/discutons.jpeg) no-repeat;
+}
+footer{
+  border:2px solid#900C3F;
 }
