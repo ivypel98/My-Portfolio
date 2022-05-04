@@ -25,6 +25,12 @@ header{
   background-color:white;
   color:black;
 
+
+}
+.navbar a{ text-decoration: none;
+  color:#900C3F;
+  font-size:1.2em;
+
 }
 
 .nav-list{
@@ -164,24 +170,12 @@ font-weight:medium;
   display: flex;
 }
 
-.button{
-  width:10%;
-}
-.button-contact{
-  font-size: 15px;
-  color:#900C3F;
-  border-radius:50%;
-  cursor: pointer;
-  margin-top:35%;
-  position: absolute;
-}
-
-/* ici commence la division à propos de portfolio */
+/* ici commence la division à propos*/
 
 .about{
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   justify-content: space-between;
   background-color: #900C3F ;
 }
@@ -198,63 +192,95 @@ font-weight:medium;
   text-transform: capitalize;
 }
 
-.container{
+.container-about{
   margin-left: 8%;
-  margin-right: 8%;
+  padding-right:8%;
   display: flex;
   justify-content: space-evenly;
   background-color:#900C3F;
   padding-top: 10%;
 }
 
-.photo1{
+.container-photo-about{
+  width: 50%;
+  height:500px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content:center;
-  width: 50%;
+}
+
+.photo-ab{
   border: 1px dotted white;
   height: 425px;
-  width:440px;
+  width:425px;
   border-radius: 50%;
-  background: center/ 425px 430px url(./images/femme.webp) no-repeat;
+  background: center/ 425px 525px url(./images/femme.webp) no-repeat;
+  position: absolute;
 }
 
-.text-about-2 {
-  width: 50%;
-  color:white;
-}
-
-.title{
-  font-size: 3em;
+.CV{
+  padding-top:30px;
+  margin-top:400px;
 }
 
 .CV p{
-  width:14rem;
-  text-align: center;
+  position: relative;
   text-transform:uppercase;
   font-size: 1.2em;
-  margin-top:90%;
-  margin-left: 20%;
-  color:#900C3F;
+  color:white;
   font-weight:bold;
   cursor:pointer;
-  background-color:#FFFf;
+}
+.CV a {
+  text-decoration: none;
 }
 
 .CV :hover {
-  transition: .4s;
+  transition: .3s;
   color:#900C3F;
 }
-.text-about-2{
-  margin-left:15%;
+
+.Description{
+  width: 50%;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+ padding-left:2%;
+}
+
+.title p{
+  font-size: 2em;
+  color: white;
 }
 
 .text p{
   text-align: justify;
   color: #ffff;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-top: 5%;
+}
+.Description .button{
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width:100px;
+  height:50px;
+  margin-top:10%;
+  margin-left:90%;
+  box-shadow: 5px 0 5px #d0d0d0 inset;
+}
+
+.button p a{
+  text-decoration: none;
+  color: #900C3F;
+  font-weight:medium;
+}
+
+.button p a:hover{
+  color:rgb(0, 0, 0);
+  transition:4s;
 }
 
 /* Partie Projets */
@@ -283,13 +309,34 @@ font-weight:medium;
   flex-direction: column;
   justify-content:space-between;
   padding: 4px;
-  border: 2px Solid #900C3F;
+  border: 1.5px Solid #900C3F;
   flex-basis: 30%;
 }
 .projet div p{
   padding: 10px 10px;
   text-align: justify;
 }
+
+.projet h2{
+  text-align:center;
+  margin:0;
+}
+
+.projet span a{
+  font-size:1.1rem;
+  font-style: italic;
+  font-weight: lighter;
+  text-decoration:none;
+  background-color:#900C3F;
+  color: #ffffff;
+  padding:5px;
+}
+
+.projet span a:hover{
+  background-color: #ffffff;
+  color: #900C3F;
+}
+
 .projet img{
   padding: 20px 0;
   height: 300px;
@@ -297,62 +344,92 @@ font-weight:medium;
   margin: 0 auto;
 }
 
+/* partie Contact */
 
-footer{
+.contact-space{
   display:flex;
   flex-wrap: wrap;
-  margin-top: 15px;
-  padding-top:20px;
-  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  padding-top:2px;
+  justify-content:center;
 }
 
 .contact{
   width: 40%;
+  display:flex;
+  flex-direction: column;
+  padding-bottom:10px;
+}
+
+.contact h1{ 
+  color:#900C3F;
+  font-size:3em;
+  margin-left: 20px;
+}
+
+.contact p{
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.contact-image{
+  height:250px;
+  margin-left: 20px;
+  background:left /350px 350px url(./images/discutons.jpeg) no-repeat;
+
 }
 
 .formulaire{
   width: 50%;
   padding-top: 100px;
 }
+
 input{
   padding-right:90px;
   margin-top: 5%;
 }
+
 .commentaire {
   min-width:300px;
   min-height: 150px;
 }
 
+.submit{ background-color:#900C3F;
+   color: white;
+   border: 1px solid white;
+   padding:5px;
+   cursor:pointer;
+}
+
+.RS {
+  display:flex;
+  height: 20px;
+  width:40px;
+  justify-content:center;
+  margin-left:150px;
+}
+
+.RS i{
+  font-size: 1.7em;
+  color: #900C3F;
+  padding-left: 15px;
+  
+}
+
+i:hover{
+  transition: .4s;
+  color: #000000;
+}
+
+/* Footer de la page */
+
 .copyright{
   background-color:#900C3F;
-  margin-top:5vh;
   color: #ffff;
   width:100%;
 }
 .copyright p{
   text-align: center;
-}
-
-
-.submit{ background-color:#900C3F;
-         color: white;
-         border-radius: 10px;
-         border: 1px solid white;
-         padding:5px;
-}
-.contact h1{ color:#900C3F;
-             font-size:3em;
-             margin-left: 20px;
-}
-.contact p{
-  margin-left: 20px;
-  justify-content: center;
-}
-.contact-image{
-  height:250px;
-  margin-left: 20px;
-  background:left /350px 350px url(./images/discutons.jpeg) no-repeat;
-}
-footer{
-  border:2px solid#900C3F;
 }
